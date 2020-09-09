@@ -1,0 +1,67 @@
+form{
+    display: flex;
+    padding: 60px 80px;
+    justify-content: space-between;
+    flex-direction: row ;
+    width: 60% ;
+
+}
+
+label,button{
+    background: yellow;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: dimgrey;
+    border: none;
+    outline: none;
+    letter-spacing: 1.1px;
+    box-shadow: 2px 2px 6px 0 rgba(50, 50, 50, 0.5);
+    margin-right: 12px;
+    cursor: pointer;
+    transition: 0.6s all;
+
+}
+
+label:hover,button:hover{
+    transform: scale(1.02, 1.02);
+}
+
+input,select{
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 1.2px solid grey;
+    outline: none;
+    height: 27px;
+    width: 50px;
+}
+
+select{
+    padding: 2px;
+}
+
+@media  (max-width:800px) {
+
+
+
+    form{
+
+        padding: 20px 80px;
+        justify-content: start;
+        flex-direction: column ;
+        width: 80% ;
+
+    }
+
+    label,button{
+        margin: 0 auto 20px auto;
+        width: 50%;
+
+    }
+
+}
